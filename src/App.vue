@@ -1,19 +1,29 @@
 <template>
   <div id="app">
-    <h-input v-model="inputVal"></h-input>
+    <h-form-item label="用户名">
+      <h-input v-model="form.userName"></h-input>
+    </h-form-item>
+    <h-form-item label="密码">
+      <h-input v-model="form.password" type="password"></h-input>
+    </h-form-item>
   </div>
 </template>
 
 <script>
+import HFormItem from './components/HFormItem.vue'
 import HInput from './components/HInput.vue'
 export default {
   name: 'app',
   components: {
+    HFormItem,
     HInput
   },
   data () {
     return {
-      inputVal: '1000'
+      form: {
+        userName: 'snoilednad',
+        password: '123456'
+      }
     }
   }
 }

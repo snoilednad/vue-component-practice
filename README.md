@@ -12,9 +12,10 @@ npm run dev // 启动项目
 
 ## 表单组件
 + HForm
-  - 提交校验
+  - 提交时校验表单
 + HFormItem
   - label
   - 错误信息errMsg
 + HInput
   - v-model双向绑定
+  - 通知校验

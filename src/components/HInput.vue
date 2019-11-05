@@ -1,7 +1,5 @@
 <template>
-  <div>
-    <input :value="$attrs.value" @input="handleInput" v-bind="$attrs"/>
-  </div>
+  <input :value="$attrs.value" @input="handleInput" v-bind="$attrs"/>
 </template>
 
 <script>
